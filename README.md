@@ -1,1 +1,1 @@
-# EC-Benchmark-2---CSE370
+# EC-Benchmark-2-CSE370
