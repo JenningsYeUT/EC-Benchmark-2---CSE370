@@ -7,7 +7,7 @@ The original provided code from OMAE 2021 uses a annual maxima modeling approach
 ![ModelingApproach](/plots/Annmax-PoT_Gumbel.png)
 
 ## Threshold Effects
-The prediction results from PoT are affected by the threshold set in the model. The results of different thresholds of the 99th and 99.9th percentile are depicted below. For comparison purposes, the thresholds were rather arbitrarily picked. For additional information on picking thresholds in PoT, see the references in the 'Reference Papers' folder.
+The prediction results from PoT are affected by the threshold set in the model. The results of different thresholds of the 99th and 99.9th percentile are depicted below. For comparison purposes, the thresholds were rather arbitrarily picked. Several ideas for proper threshold selection can be found in other work.
 
 ![ThresholdEffects](/plots/ThresholdEffects_Gumbel.png)
 
@@ -28,4 +28,4 @@ Different extreme value distributions were also compared. In particular, the res
 The modeling parameters are important to the accurate prediction of extreme values. Different thresholds within the PoT method, as well as different declustering methods produce greatly different confidence intervals for these predictions. These parameters are all independent of the dataset, and should be chosen carefully.
 
 ## References and Future work
-Reference for this work can be found in the "Referance Papers" folder, as well as the original [ec-benchmark-2 repository](https://github.com/ec-benchmark-organizers/ec-benchmark-2). These papers provide guidelines for this problem as well as ideas on proper threshold selection and filtering.
+Guidelines for this problem can be found at the original [ec-benchmark-2 repository](https://github.com/ec-benchmark-organizers/ec-benchmark-2). Note that all of these plots are for the Site 1 data provided in the problem, and models have not been compared for the other test sites. Additionally,  external resources on proper threshold selection and filtering for PoT modeling exist and may be of interest for future work.
