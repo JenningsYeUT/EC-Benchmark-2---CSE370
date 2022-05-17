@@ -12,7 +12,7 @@ The prediction results from PoT are affected by the threshold set in the model. 
 ![ThresholdEffects](/plots/ThresholdEffects_Gumbel.png)
 
 ## Filtering/Declustering
-In addition to different thresholds, the data in PoT can be filtered for declustering. This is primarily done through a run parameter, or the minimum number of data points between two peaks. The plots above default to a run parameter of 1. Additionally, declustering can be done through the peak prominence measure in MATLAB. This is a measure of the peak height relative to surrounding peaks. The plots below show both filtering methods, with a run parameter of 720, or about 3 months in the dataset, and a peak prominence of 50% of the range of wave heights. As with the thresholds, these values are rather arbitrarily selected for demonstration and comparison.
+In addition to different thresholds, the data in PoT can be filtered for declustering. This is primarily done through a run parameter, or the minimum number of data points between two peaks. The plots above default to a run parameter of 1. Additionally, declustering can be done through the [peak prominence](https://www.mathworks.com/help/signal/ug/prominence.html) measure in MATLAB. The plots below show both filtering methods, with a run parameter of 720, or about 3 months in the dataset, and a peak prominence of 50% of the range of wave heights. As with the thresholds, these values are rather arbitrarily selected for demonstration and comparison.
 
 ![DistanceFiltering](/plots/DistanceFiltering_Gumbel.png) 
 ![ProminenceFiltering](/plots/ProminenceFiltering_Gumbel.png)
