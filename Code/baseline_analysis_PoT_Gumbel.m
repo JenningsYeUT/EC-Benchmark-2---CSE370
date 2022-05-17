@@ -15,8 +15,8 @@ Hs=data(:,5);
 thprc=99.9;
 threshold=prctile(Hs, thprc);
 pks=findpeaks(Hs);
-%pks=findpeaks(Hs,'MinPeakProminence',range(Hs)*.10);
-%pks=findpeaks(Hs,'MinPeakDistance',1440);
+%pks=findpeaks(Hs,'MinPeakProminence',range(Hs)*.50);
+%pks=findpeaks(Hs,'MinPeakDistance',720);
 indices=find(pks>threshold);
 peaks=pks(indices);
 

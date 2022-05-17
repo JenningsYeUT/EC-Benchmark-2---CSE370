@@ -14,9 +14,9 @@ Hs=data(:,5);
 % create subset with PoT
 thprc=99.9;
 threshold=prctile(Hs, thprc);
-%pks=findpeaks(Hs);
+pks=findpeaks(Hs);
 %pks=findpeaks(Hs,'MinPeakProminence',range(Hs)*.50);
-pks=findpeaks(Hs,'MinPeakDistance',720);
+%pks=findpeaks(Hs,'MinPeakDistance',720);
 indices=find(pks>threshold);
 peaks=pks(indices);
 
@@ -92,7 +92,7 @@ plot(xlow,1-P,'b--')
 plot(xhigh,1-P,'b--')
 xlabel('Peaks over Threshold Hs [m]')
 ylabel('Exceedance probability')
-title(['Exercise ' num2str(exercise) ', Site ' num2str(site) ' - PoT Weibull - Threshold = ' num2str(thprc) '%'])
+title(['PoT' char(8211) 'Threshold = ' num2str(thprc) '%, Weibull'])
 annotation('textbox','String',append('n = ', num2str(n)),'FitBoxToText','on');
 ylim([1e-2 1])
 set(gca,'yscale','log')
