@@ -18,7 +18,7 @@ In addition to different thresholds, the data in PoT can be filtered for declust
 ![Threshold Effects](/plots/ProminenceFiltering_Gumbel.png)
 
 ## Distribution Effects
-Different extreme value distributions were also compared. In particular, the results for the original annual maxima model approach for both the Weibull and Generalized Extreme Value (GEV) distributions are plotted together with the Gumbel distribution results below. Note that the Gumbel distribution fit uses a method of moments, while the Weibull and GEV distributions are fitted using maximum likelihood through built-in MATLAB functions.
+Different extreme value distributions were also compared. In particular, the results for the original annual maxima model approach for both the Weibull and Generalized Extreme Value (GEV) distributions are plotted together with the Gumbel distribution results below. Note that the Gumbel distribution fit uses a method of moments, while the Weibull and GEV distributions are fitted using maximum likelihood through built-in MATLAB functions. Note the model dataset is the same for all distributions as all use the Annual Maxima method.
 
 ![Threshold Effects](/plots/WeibullGumbelAnnmax.png) 
 ![Threshold Effects](/plots/GEVGumbelAnnmax.png)
