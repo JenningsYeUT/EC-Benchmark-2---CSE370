@@ -12,13 +12,13 @@ The prediction results from PoT are affected by the threshold set in the model. 
 ![ThresholdEffects](/plots/ThresholdEffects_Gumbel.png)
 
 ## Filtering/Declustering
-In addition to different thresholds, the data in PoT can be filtered for declustering. This is primarily done through a run parameter, or the minimum number of data points between two peaks. The plots above default to a run parameter of 1. Additionally, declustering can be done through the peak prominence measure in MATLAB. This is a measure of the peak height relative to surrounding peaks. The plots below show both filtering methods, with a run parameter of 720, or about 3 months in the dataset, and a peak prominence of 50% of the range of wave heights.
+In addition to different thresholds, the data in PoT can be filtered for declustering. This is primarily done through a run parameter, or the minimum number of data points between two peaks. The plots above default to a run parameter of 1. Additionally, declustering can be done through the peak prominence measure in MATLAB. This is a measure of the peak height relative to surrounding peaks. The plots below show both filtering methods, with a run parameter of 720, or about 3 months in the dataset, and a peak prominence of 50% of the range of wave heights. As with the thresholds, these values are rather arbitrarily selected for demonstration and comparison.
 
 ![DistanceFiltering](/plots/DistanceFiltering_Gumbel.png) 
 ![ProminenceFiltering](/plots/ProminenceFiltering_Gumbel.png)
 
 ## Distribution Effects
-Different extreme value distributions were also compared. In particular, the results for the original annual maxima model approach for both the Weibull and Generalized Extreme Value (GEV) distributions are plotted together with the Gumbel distribution results below. Note that the Gumbel distribution fit uses a method of moments, while the Weibull and GEV distributions are fitted using maximum likelihood through built-in MATLAB functions. Note the model dataset is the same for all distributions as all use the Annual Maxima method.
+Different extreme value distributions were also compared. In particular, the results for the original annual maxima model approach for both the Weibull and Generalized Extreme Value (GEV) distributions are plotted together with the Gumbel distribution results below. Note that the Gumbel distribution fit uses a method of moments, while the Weibull and GEV distributions are fitted using maximum likelihood through built-in MATLAB functions. Note the model dataset is the same for all distributions as all use the annual maxima method.
 
 ![Weibull](/plots/WeibullGumbelAnnmax.png) 
 ![GEV](/plots/GEVGumbelAnnmax.png)
@@ -28,4 +28,4 @@ Different extreme value distributions were also compared. In particular, the res
 The modeling parameters are important to the accurate prediction of extreme values. Different thresholds within the PoT method, as well as different declustering methods produce greatly different confidence intervals for these predictions. These parameters are all independent of the dataset, and should be chosen carefully.
 
 ## References and Future work
-Guidelines for this problem can be found at the original [ec-benchmark-2 repository](https://github.com/ec-benchmark-organizers/ec-benchmark-2). Note that all of these plots are for the Site 1 data provided in the problem, and models have not been compared for the other test sites. Additionally,  external resources on proper threshold selection and filtering for PoT modeling exist and may be of interest for future work.
+Guidelines for this problem can be found at the original [ec-benchmark-2 repository](https://github.com/ec-benchmark-organizers/ec-benchmark-2). All results shown here are for the Site 1 data provided in the problem, and models have not been compared for the other test sites. Additionally,  external resources on proper threshold selection and filtering for PoT modeling exist and may be of interest for future work.
