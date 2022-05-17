@@ -25,7 +25,7 @@ Different extreme value distributions were also compared. In particular, the res
 
 
 ## Key Takeaways
-The modeling parameters are important to the accurate prediction of extreme values. Different thresholds within the PoT method, as well as different declustering methods produce greatly different confidence intervals for these predictions. These parameters are all independent of the dataset, and should be chosen carefully.
+The modeling parameters are important to the accurate prediction of extreme values. Different thresholds within the PoT method, as well as different declustering methods produce greatly different confidence intervals for these predictions. These parameters are all independent of the dataset, and should be chosen carefully. External scholarly work has been done on all of these parameters, and may be of interest for future work in creating more accurate predictive models.
 
-## References and Future work
-Guidelines and datasets, as well as the original provided code for this problem can be found at the original [ec-benchmark-2 repository](https://github.com/ec-benchmark-organizers/ec-benchmark-2). All results shown here are for the Site 1 data provided in the problem, and models have not been compared for the other test sites. Additionally,  external resources on proper threshold selection and filtering for PoT modeling exist and may be of interest for future work.
+## References
+Guidelines and datasets, as well as the original provided code for this problem can be found at the original [ec-benchmark-2 repository](https://github.com/ec-benchmark-organizers/ec-benchmark-2). All results shown here are for the Site 1 data provided in the problem, and models have not been compared for the other test sites.
