@@ -9,16 +9,16 @@ The original provided code from OMAE 2021 uses a annual maxima modeling approach
 ## Threshold Effects
 The prediction results from PoT are affected by the threshold set in the model. The results of different thresholds of the 99th and 99.9th percentile are depicted below. For comparison purposes, the thresholds were rather arbitrarily picked. For additional information on picking thresholds in PoT, see the references in the 'Threshold Selection' folder.
 
-![Threshold Effects](/plots/ThresholdEffects_Gumbel.png)
+![ThresholdEffects](/plots/ThresholdEffects_Gumbel.png)
 
 ## Filtering/Declustering
 In addition to different thresholds, the data in PoT can be filtered for declustering. This is primarily done through a run parameter, or the minimum number of data points between two peaks. The plots above default to a run parameter of 1. Additionally, declustering can be done through the peak prominence measure in MATLAB. This is a measure of the peak height relative to surrounding peaks. The plots below show both filtering methods, with a run parameter of 720, or about 3 months in the dataset, and a peak prominence of 50% of the range of wave heights.
 
-![Threshold Effects](/plots/DistanceFiltering_Gumbel.png) 
-![Threshold Effects](/plots/ProminenceFiltering_Gumbel.png)
+![DistanceFiltering](/plots/DistanceFiltering_Gumbel.png) 
+![ProminenceFiltering](/plots/ProminenceFiltering_Gumbel.png)
 
 ## Distribution Effects
 Different extreme value distributions were also compared. In particular, the results for the original annual maxima model approach for both the Weibull and Generalized Extreme Value (GEV) distributions are plotted together with the Gumbel distribution results below. Note that the Gumbel distribution fit uses a method of moments, while the Weibull and GEV distributions are fitted using maximum likelihood through built-in MATLAB functions. Note the model dataset is the same for all distributions as all use the Annual Maxima method.
 
-![Threshold Effects](/plots/WeibullGumbelAnnmax.png) 
-![Threshold Effects](/plots/GEVGumbelAnnmax.png)
+![Weibull](/plots/WeibullGumbelAnnmax.png) 
+![GEV](/plots/GEVGumbelAnnmax.png)
