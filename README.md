@@ -3,3 +3,5 @@ This repository contains work done on the EC benchmark 2 announced at OMAE 2021.
 
 ## Modeling Approches
 The original provided code from OMAE 2021 uses a annual maxima modeling approach with a gumbel distribution. In this work, a Peaks-over-Threshold (PoT) approach is investigated instead. The differences between the two modeling approaches with the same gumbel distribution is shown below. The threshold for PoT is set to the 99.9th percentile of the dataset to maintain a similar number of data points in the two methods.
+
+![ModelingApproach](/images/Annmax-PoT_Gumbel.png)
