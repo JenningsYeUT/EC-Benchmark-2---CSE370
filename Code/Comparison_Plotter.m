@@ -14,7 +14,7 @@ line2=copyobj(allchild(get(fig2,'CurrentAxes')),h1);
 set(line2, 'color', 'r');
 %line3=copyobj(allchild(get(fig3,'CurrentAxes')),h1);
 %set(line3, 'color', 'g');
-xlabel('Peaks over Threshold Hs [m]')
+xlabel('Annual Maxima Hs [m]')
 ylabel('Exceedance probability')
 set(gca,'yscale','log')
 set(gca,'YMinorTick','off')
